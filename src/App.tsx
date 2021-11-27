@@ -7,7 +7,7 @@ import {
 import routes from '../src/router'
 function App() {
   return <Suspense fallback={<span>loading</span>}>
-    <Router>
+    <Router basename="/flow-front">
       <Switch>
         {
           routes.map(route => <Route exact key={route.path} path={route.path}>
